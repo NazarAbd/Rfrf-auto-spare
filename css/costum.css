@@ -1,0 +1,138 @@
+html{
+    scroll-behavior: smooth;
+}
+
+/* Scroll back button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: 1px white solid ;
+    outline: none;
+    background-color: #123455;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    padding:10px;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* First Slider Style  */
+
+.slide-left-right
+{
+text-decoration:none;
+display: inline-block;
+color:black;
+}
+/* add a empty string after the element with class .slide-left-right */
+.slide-left-right:after 
+{
+content: '';
+display: block;
+height: 3px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease; /* .5 seonds for changes to the width and background-color */
+-webkit-transition: width .5s ease, background-color .5s ease; /* Chrome and Safari */
+-moz-transition: width .5s ease, background-color .5s ease; /* FireFox */
+}
+/* Change the width and background on hover, aka sliding out */
+.slide-left-right:hover:after 
+{
+width: 100%;
+background: black;
+}
+
+/* first Slider */
+.sldier-con{
+    border-radius: 10px;
+}
+.sldier-con img{
+    border-radius: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+/* branches */
+.branch{
+    border: 2px darkgrey solid;
+    height: 205px;
+    border-radius: 5px;
+}
+.mapouter 
+{
+    height:100%;
+    width:100%;
+}
+.gmap_canvas
+ {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}
+
+/* Companies Slider */
+.com-con{
+    height: 80px;
+}
+.com-con img{
+    max-height: 100%;
+}
+/* contact Us */
+.contact-us input[type='submit']
+{
+background-color:#123455;
+color:white;
+height:30px;
+line-height:100%;
+}
+
+/* About US */
+.about-us img{
+    width: 100%;
+    max-width:100%;
+}
+
+/* footer */
+
+.footer{
+    background:#123455;
+    color:white;
+}
+.footer a{
+    color:white;
+}
+.footer input[type='email'],.footer input[type='submit']
+{
+    height:25px;
+    line-height:100%;
+    font-size: smaller;
+    color:white;
+}
+.footer input[type='email']{
+    background-color:#123455;
+}
+.footer textarea{
+    background-color:#123455;
+    color:white;
+    font-size: smaller;
+}
+.footer input::placeholder, .footer textarea::placeholder {
+    color:white;
+}
+.footer input[type='submit']
+{
+    color:#123455;
+    font-weight: bold;    
+}
+/* last */
+.last a{
+color:#123455;
+
+}
